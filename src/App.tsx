@@ -8,7 +8,7 @@ import {
 import Footer from "./common/Footer";
 import Navbar from "./common/Navbar";
 import HomePage from "./pages/HomePage/HomePage";
-import useCache from "./contexts/cacheContext";
+import useCache, { CacheProvider } from "./contexts/cacheContext";
 import ForBusinessesPage from "./pages/ForBusinessesPage/ForBusinessesPage";
 
 export default function App() {
@@ -30,13 +30,15 @@ function Root() {
   return (
     <main className="relative">
       <Navbar />
-      {cache.loading ? (
-        <div className="flex items-center justify-center h-screen">
-          Loading ...{" "}
-        </div>
-      ) : (
-        <Outlet />
-      )}
+      <CacheProvider>
+        {cache.loading ? (
+          <div className="flex items-center justify-center h-screen">
+            Loading ...{" "}
+          </div>
+        ) : (
+          <Outlet />
+        )}
+      </CacheProvider>
       <Footer />
     </main>
   );
