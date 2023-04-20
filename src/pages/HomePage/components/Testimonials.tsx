@@ -30,7 +30,7 @@ export default function Testimonials() {
           }}
         >
           {t1.map((t, i) => {
-            if (i > Math.min(t1.length, t2.length)) {
+            if (i > Math.min(t1.length, t2.length) - 1) {
               return <></>;
             }
             const a = t1[i];
@@ -38,16 +38,19 @@ export default function Testimonials() {
             return (
               <div className="flex flex-col gap-y-3">
                 {[a, b].map((item, i) => (
-                  <div className="border shadow-lg p-3 w-[20vw] rounded">
+                  <div
+                    key={i}
+                    className="border shadow-lg p-3 w-[20vw] rounded"
+                  >
                     <div className="flex items-center gap-x-2">
                       <img
-                        src={a.imageUrl}
-                        alt={a.name}
+                        src={item.imageUrl}
+                        alt={item.name}
                         className="w-14 aspect-square rounded-full object-cover object-center"
                       />
-                      <h5 className="text-xl ">{a.name}</h5>
+                      <h5 className="text-xl ">{item.name}</h5>
                     </div>
-                    <p className="mt-3">{a.content}</p>
+                    <p className="mt-3">{item.content}</p>
                   </div>
                 ))}
               </div>

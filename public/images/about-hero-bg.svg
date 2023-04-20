@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="488" viewBox="0 0 1440 488">
+    <defs>
+        <path id="a" d="M0 0h1440v488H0z"/>
+        <path id="c" d="M0 0h1440v488H0z"/>
+        <linearGradient id="d" x1="11.06%" y1="82.353%" y2="38.798%">
+            <stop offset="0%" stop-color="#1F7AE0" stop-opacity=".424"/>
+            <stop offset="100%" stop-color="#1F7AE0" stop-opacity=".436"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#1F7AE0" d="M0 0h1440v488H0z"/>
+        <g>
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <g mask="url(#b)" opacity=".719">
+                <g stroke="#FFF" stroke-width="2" opacity=".1" transform="translate(-1250 -1057)">
+                    <circle cx="1403.5" cy="1403.5" r="14.5"/>
+                    <circle cx="1404" cy="1404" r="42"/>
+                    <circle cx="1404" cy="1404" r="74"/>
+                    <circle cx="1404" cy="1404" r="116"/>
+                    <circle cx="1404" cy="1404" r="175"/>
+                    <circle cx="1404" cy="1404" r="255"/>
+                    <circle cx="1404" cy="1404" r="339"/>
+                    <circle cx="1404" cy="1404" r="466"/>
+                    <circle cx="1404" cy="1404" r="595"/>
+                    <circle cx="1404" cy="1404" r="758"/>
+                    <circle cx="1404" cy="1404" r="962"/>
+                    <circle cx="1404" cy="1404" r="1179"/>
+                    <circle cx="1404" cy="1404" r="1404"/>
+                </g>
+            </g>
+        </g>
+        <g>
+            <g>
+                <mask id="e" fill="#fff">
+                    <use xlink:href="#c"/>
+                </mask>
+                <path fill="url(#d)" d="M0 0h1440v488H0z" mask="url(#e)" opacity=".761"/>
+            </g>
+        </g>
+    </g>
+</svg>
