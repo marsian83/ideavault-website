@@ -20,13 +20,15 @@ export function CacheProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   async function loadData() {
-    // const fetchedData = await fetch("/data/global.json");
-    const fetchedData = await fetch(
-      "https://api.npoint.io/b66de2ecaa8c091b7c4c"
-    );
-    const parsedData = await fetchedData.json();
-    setData(parsedData);
-    setLoading(false);
+    if (loading) {
+      // const fetchedData = await fetch("/data/global.json");
+      const fetchedData = await fetch(
+        "https://api.npoint.io/b66de2ecaa8c091b7c4c"
+      );
+      const parsedData = await fetchedData.json();
+      setData(parsedData);
+      setLoading(false);
+    }
   }
 
   return (

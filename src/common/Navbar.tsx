@@ -3,10 +3,6 @@ import useCache from "../contexts/cacheContext";
 import { useEffect } from "react";
 
 export default function Navbar() {
-  const cache = useCache();
-
-  cache.loadData();
-
   return (
     <>
       <nav className="p-page py-4 flex fixed w-full justify-between items-center shadow-lg border-b bg-background z-[999]">
