@@ -4,10 +4,9 @@ import CreatedByExperts from "./components/CreatedByExperts";
 import Faqs from "./components/Faqs";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
-import useLoader from "../../hooks/useLoader";
 
 export default function HomePage() {
-  return useLoader(
+  return (
     <>
       <Hero />
 

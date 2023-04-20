@@ -10,7 +10,6 @@ import { GlobalData } from "../interfaces/Data";
 interface cacheType {
   loading: boolean;
   data: GlobalData;
-  loadData: () => void;
 }
 
 const CacheContext = createContext<cacheType>({} as cacheType);
@@ -31,12 +30,15 @@ export function CacheProvider({ children }: { children: ReactNode }) {
     }
   }
 
+  useEffect(() => {
+    loadData();
+  });
+
   return (
     <CacheContext.Provider
       value={{
         loading,
         data,
-        loadData,
       }}
     >
       {children}

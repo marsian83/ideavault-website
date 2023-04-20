@@ -8,9 +8,10 @@ import {
 import Footer from "./common/Footer";
 import Navbar from "./common/Navbar";
 import HomePage from "./pages/HomePage/HomePage";
-import ForBusinessesPage from "./pages/ForBusinessesPage/ForBusinessesPage";
-import AboutPage from "./pages/AboutPage/AboutPage";
 import useCache from "./contexts/cacheContext";
+import ForBusinessesPage from "./pages/ForBusinessesPage/ForBusinessesPage";
+import { useEffect } from "react";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 export default function App() {
   const router = createBrowserRouter(
@@ -27,10 +28,18 @@ export default function App() {
 }
 
 function Root() {
+  const cache = useCache();
+
   return (
     <main className="relative">
       <Navbar />
-      <Outlet />
+      {cache.loading ? (
+        <div className="flex items-center justify-center h-screen">
+          Loading ...{" "}
+        </div>
+      ) : (
+        <Outlet />
+      )}
       <Footer />
     </main>
   );
