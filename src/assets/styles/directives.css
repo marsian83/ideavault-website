@@ -1,0 +1,22 @@
+@keyframes y-carousel-view {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-90%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes x-carousel-view {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-90%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-front;
+  }
+}
+
+@layer utilities {
+  .p-page {
+    @apply px-[12vw];
+  }
+
+  .btn-1 {
+    @apply bg-primary rounded-md text-lg font-medium text-back text-center duration-300 hover:-translate-y-1 hover:brightness-110;
+  }
+  .btn-2 {
+    @apply bg-background rounded-md text-lg font-medium text-primary border border-primary border-opacity-70 text-center duration-300 hover:-translate-y-1 hover:brightness-110;
+  }
+}
