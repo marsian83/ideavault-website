@@ -19,7 +19,7 @@ export default function Navbar() {
         </div>
         <div className="flex gap-x-8 items-center text-sm font-medium text-front text-opacity-70">
           <Link to="/for-businesses">For Businesses</Link>
-          <Link to="/team">Our Team</Link>
+          <Link to="/about">About</Link>
         </div>
       </nav>
     </>
