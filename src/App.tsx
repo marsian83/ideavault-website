@@ -27,10 +27,6 @@ export default function App() {
 }
 
 function Root() {
-  const cache = useCache();
-
-  cache.loadData();
-
   return (
     <main className="relative">
       <Navbar />
