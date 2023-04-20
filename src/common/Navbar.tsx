@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import useCache from "../contexts/cacheContext";
+import { useEffect } from "react";
 
 export default function Navbar() {
   return (
