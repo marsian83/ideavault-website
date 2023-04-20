@@ -10,6 +10,7 @@ import Navbar from "./common/Navbar";
 import HomePage from "./pages/HomePage/HomePage";
 import ForBusinessesPage from "./pages/ForBusinessesPage/ForBusinessesPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
+import useCache from "./contexts/cacheContext";
 
 export default function App() {
   const router = createBrowserRouter(
@@ -26,6 +27,10 @@ export default function App() {
 }
 
 function Root() {
+  const cache = useCache();
+
+  cache.loadData();
+
   return (
     <main className="relative">
       <Navbar />
