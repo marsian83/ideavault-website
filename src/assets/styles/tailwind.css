@@ -12,6 +12,9 @@
   .p-page {
     @apply px-[12vw];
   }
+  .m-page {
+    @apply mx-[12vw];
+  }
 
   .btn-1 {
     @apply bg-primary rounded-md text-lg font-medium text-back text-center duration-300 hover:-translate-y-1 hover:brightness-110;

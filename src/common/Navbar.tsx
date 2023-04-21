@@ -11,10 +11,10 @@ export default function Navbar() {
             ideavault
           </Link>
           <div className="flex gap-x-8 items-center text-sm font-medium text-front text-opacity-70">
-            <Link to="/discover" className="">
+            <Link to="/vaults/0" className="">
               Discover
             </Link>
-            <Link to="/watchlist" className="">
+            <Link to="/vaults/0" className="">
               Watchlist
             </Link>
           </div>

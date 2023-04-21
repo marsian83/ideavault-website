@@ -10,7 +10,6 @@ import Navbar from "./common/Navbar";
 import HomePage from "./pages/HomePage/HomePage";
 import useCache from "./contexts/cacheContext";
 import ForBusinessesPage from "./pages/ForBusinessesPage/ForBusinessesPage";
-import { useEffect } from "react";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import DiscoverPage from "./pages/DiscoverPage/DiscoverPage";
 
@@ -21,7 +20,7 @@ export default function App() {
         <Route index element={<HomePage />} />
         <Route path="/for-businesses" element={<ForBusinessesPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/discover/vault" element={<DiscoverPage />} />
+        <Route path="/vaults/:id" element={<DiscoverPage />} />
       </Route>
     )
   );
