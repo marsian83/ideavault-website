@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [bgIndex, setBgIndex] = useState(0);
@@ -27,7 +28,9 @@ export default function Hero() {
           </p>
           <div className="flex w-1/2 justify-between">
             <button className="btn-1 px-6 py-4">Login</button>
-            <button className="btn-2 px-6 py-4">See Ideavaults</button>
+            <Link to="/vaults/0" className="btn-2 px-6 py-4">
+              See Ideavaults
+            </Link>
           </div>
           <p className="text-lg text-front text-opacity-80">
             Supported by Hong Kong's largest brokers!

@@ -22,12 +22,9 @@ export default function Navbar() {
         <div className="flex gap-x-8 items-center text-sm font-medium text-front text-opacity-70">
           <Link to="/for-businesses">For Businesses</Link>
           <Link to="/about">About</Link>
-          <Link
-            to="/login"
-            className="text-primary border border-primary border-opacity-40 rounded-md px-4 py-2 text-sm duration-300 hover:bg-primary hover:text-back"
-          >
+          <button className="text-primary border border-primary border-opacity-40 rounded-md px-4 py-2 text-sm duration-300 hover:bg-primary hover:text-back">
             Login
-          </Link>
+          </button>
         </div>
       </nav>
     </>
