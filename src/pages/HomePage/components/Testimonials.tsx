@@ -19,7 +19,7 @@ export default function Testimonials() {
       <div className="overflow-hidden">
         {cache.data.testimonials.map((t, i) => {
           i % 2 == 0 ? t1.push(t) : t2.push(t);
-          return <></>;
+          return <div key={i} className="hidden"></div>;
         })}
         <div
           className="flex gap-2 py-12"
@@ -31,12 +31,12 @@ export default function Testimonials() {
         >
           {t1.map((t, i) => {
             if (i > Math.min(t1.length, t2.length) - 1) {
-              return <></>;
+              return <div key={i} className="hidden"></div>;
             }
             const a = t1[i];
             const b = t2[i];
             return (
-              <div className="flex flex-col gap-y-3">
+              <div key={i} className="flex flex-col gap-y-3">
                 {[a, b].map((item, i) => (
                   <div
                     key={i}
