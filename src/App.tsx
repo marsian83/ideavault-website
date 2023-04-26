@@ -33,9 +33,6 @@ function Root() {
 
   return (
     <main className="relative">
-      <div className="fixed z-[11111] top-0 left-0 w-screen h-screen bg-background text-primary justify-center items-center text-2xl hidden">
-        maintain
-      </div>
       <Navbar />
       {cache.loading ? (
         <div className="flex items-center justify-center h-screen">

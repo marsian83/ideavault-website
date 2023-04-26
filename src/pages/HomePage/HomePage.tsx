@@ -10,8 +10,8 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="flex p-page">
-        <div className="basis-1/2 flex flex-col gap-y-5 pr-28">
+      <section className="flex flex-row-reverse p-page">
+        <div className="basis-1/2 flex flex-col gap-y-5 pl-28">
           <h1 className="text-4xl font-bold">
             An ideavault is a basket of stocks that reflects an idea
           </h1>
@@ -68,11 +68,13 @@ export default function HomePage() {
         />
       </section>
 
+      <Faqs />
+      <div className="my-32" />
       <CreatedByExperts />
       <Testimonials />
-      <Faqs />
 
-      <section className="p-page flex flex-col items-center pt-20">
+      {/* pt-20 tha */}
+      <section className="p-page flex flex-col items-center pt-8">
         <h1 className="text-lg font-medium">
           Have more questions or some feedback?
         </h1>

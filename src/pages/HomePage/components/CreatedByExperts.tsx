@@ -5,7 +5,7 @@ export default function CreatedByExperts() {
   const cache = useCache();
 
   return (
-    <section className="flex p-page">
+    <section className="flex flex-row-reverse p-page">
       <div className="basis-1/2 flex flex-col gap-y-5 py-4">
         <h1 className="font-bold text-3xl">
           Curated by Hong Kong's <br /> top investment managers
