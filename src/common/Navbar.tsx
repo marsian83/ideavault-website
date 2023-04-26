@@ -14,9 +14,9 @@ export default function Navbar() {
             <Link to="/vaults/0" className="">
               Discover
             </Link>
-            <Link to="/vaults/0" className="">
+            {/* <Link to="/vaults/0" className="">
               Watchlist
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="flex gap-x-8 items-center text-sm font-medium text-front text-opacity-70">
