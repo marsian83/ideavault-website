@@ -10,7 +10,7 @@ export function ChartComponent(props: ChartComponentProps) {
   const canvasRef = useRef() as React.MutableRefObject<HTMLCanvasElement>;
 
   useEffect(() => {
-    const ctx = canvasRef.current.getContext("2d") as CanvasRenderingContext2D;
+    // const ctx = canvasRef.current.getContext("2d") as CanvasRenderingContext2D;
 
     try {
       const data = props.data;

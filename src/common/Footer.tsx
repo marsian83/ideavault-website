@@ -49,7 +49,7 @@ export default function Footer() {
         <div className="flex justify-between pt-3 border-t border-front border-opacity-30">
           <p>The Univeristy of Hong Kong</p>
           <div>
-            <p>Contact us on : help@ideavaulthk.com</p>
+            <p>Contact us on : info@ideavaulthk.com</p>
             <p>Mobile : +85284900225 / +85298172467</p>
           </div>
         </div>

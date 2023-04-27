@@ -4,54 +4,47 @@ import CreatedByExperts from "./components/CreatedByExperts";
 import Faqs from "./components/Faqs";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
+import ForEveryone from "./components/ForEveryone";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
 
-      <section className="flex flex-row-reverse p-page">
-        <div className="basis-1/2 flex flex-col gap-y-5 pl-28">
-          <h1 className="text-4xl font-bold">
-            An ideavault is a basket of stocks that reflects an idea
-          </h1>
-          <p className="text-lg text-front text-opacity-75">
-            ideavaultssare portfolios of stocks or ETFs, that track a theme,
-            strategy or objective
-          </p>
-          <img
-            className="w-full contrast-200 rounded-xl shadow-2xl"
-            src="/images/homepage-video-banner.jpg"
-            alt="vid-replace"
-          />
-        </div>
-        <div className="basis-1/2 flex flex-col gap-y-10 py-10">
+      <section className="flex p-page">
+        <div className="flex flex-row justify-between py-14">
           {[
             {
-              imageUrl:
-                "https://www.smallcase.com/static/images/svg/what-is-smallcase/1.svg",
-              title: "Simple to understand",
+              imageUrl: "/images/beginner-friendly.png",
+              title: "Beginner Friendly",
               content:
-                "ideavaults are modern investing products based on simple ideas you can understand.",
+                " ideavaults are new ways to invest based on simple ideas that are easy to understand for everyone.",
             },
             {
-              imageUrl:
-                "https://www.smallcase.com/static/images/svg/what-is-smallcase/2.svg",
+              imageUrl: "/images/experts.png",
               title: "Managed by professionals",
               content:
-                "ideavaults are created by Hong Kong's leading finance experts & backed by solid research.",
+                "The best financial experts in Hong Kong make ideavaults, which are backed by solid research.",
             },
             {
-              imageUrl:
-                "https://www.smallcase.com/static/images/svg/what-is-smallcase/3.svg",
-              title: "Designed for you",
+              imageUrl: "/images/curated.png",
+              title: "Personally curated",
               content:
-                "ideavaults are fully customizable. Edit your ideavault constituents any time or create your own ideavault.",
+                "ideavaults can be changed to fit your needs. You can change the things in your ideavault any time, make your own ideavault",
             },
           ].map((item, i) => (
-            <div className="flex" key={i}>
-              <img src={item.imageUrl} alt="simple to understand" />
-              <div className="flex flex-col justify-evenly">
+            <div
+              className="flex flex-col w-[28%] justify-between h-full"
+              key={i}
+            >
+              <div className="flex-1 flex flex-col justify-between items-center">
+                <img
+                  src={item.imageUrl}
+                  className="w-[30%] aspect-square"
+                  alt="simple to understand"
+                />
+              </div>
+              <div className="flex flex-col flex-1 py-2 justify-center items-center text-center">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
                 <p>{item.content}</p>
               </div>
@@ -60,13 +53,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="my-14">
+      <section className="flex flex-col gap-y-5 py-10 p-page">
+        <h1 className="text-4xl font-bold">
+          An ideavault is a basket of stocks that reflects an idea
+        </h1>
+        <p className="text-lg text-front text-opacity-75">
+          ideavaultssare portfolios of stocks or ETFs, that track a theme,
+          strategy or objective
+        </p>
+        <img
+          className="w-[35vw] contrast-200 rounded-xl shadow-xl"
+          src="/images/homepage-video-banner.jpg"
+          alt="vid-replace"
+        />
+      </section>
+
+      {/* <section className="my-14">
         <img
           src="/images/ideavault-simplicity-banner.jpg"
           alt="ideavault is for everyone"
           className="w-full"
         />
-      </section>
+      </section> */}
+      <ForEveryone />
 
       <Faqs />
       <div className="my-32" />
@@ -81,7 +90,7 @@ export default function HomePage() {
         <p className="py-1 text-front text-opacity-75 text-lg">
           We are just an email away
         </p>
-        <Link to="mailto:help@ideavaulthk.com" className="btn-1 px-6 py-4 mt-5">
+        <Link to="mailto:info@ideavaulthk.com" className="btn-1 px-6 py-4 mt-5">
           Write to us
         </Link>
       </section>

@@ -9,7 +9,7 @@ export default function DiscoverPage() {
   const id: number = Number(useParams()["id"]);
   const vault = cache.data.ideavaults.filter(
     (v) => v.id == id
-  )[0] as typeof cache.data.ideavaults[0];
+  )[0] as (typeof cache.data.ideavaults)[0];
 
   return (
     <>

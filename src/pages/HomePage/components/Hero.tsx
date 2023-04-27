@@ -2,42 +2,43 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
-  const [bgIndex, setBgIndex] = useState(0);
-  const backgrounds = ["/images/hero/2.jpg", "/images/hero/1.jpg"];
+  const [bannerIndex, setBannerIndex] = useState(0);
+  const banners = ["/images/hero/4.jpg", "/images/hero/5.webp"];
 
   setInterval(() => {
-    setBgIndex((bgIndex + 1) % backgrounds.length);
-  }, 2000);
+    setBannerIndex((bannerIndex + 1) % banners.length);
+  }, 2345);
 
   return (
     <>
-      <section
-        className="p-page flex h-[90vh] bg-contain bg-bottom bg-no-repeat bg-[url('/images/hero/2.jpg')]"
-        // style={{
-        //   background: "/images/hero/2.jpg",
-        // }}
-      >
-        <div className="absolute top-0 left-0 w-full h-full -z-[1]"></div>
-
-        <div className="basis-1/2 flex flex-col gap-y-5 justify-center mb-20">
-          <h1 className="text-6xl font-bold tracking-tight">
-            Invest in ideas <br /> with ideavault
+      <section className="p-page flex h-[75vh] bg-contain bg-bottom bg-no-repeat">
+        <div className="basis-1/2 flex flex-col justify-center">
+          <img
+            src={banners.at(bannerIndex)}
+            alt="hero-banner"
+            className="aspect-video w-full"
+          />
+        </div>
+        <div className="basis-1/2 flex flex-col gap-y-5 justify-center items-center">
+          <h1 className="text-4xl font-bold text-center tracking-tight">
+            Unlock your investment
+            <br />
+            opportunities with ideavault
           </h1>
           <p className="text-lg text-front text-opacity-80">
             Get simple, smart investment portfolios curated by experts
           </p>
-          <div className="flex w-1/2 justify-between">
-            <button className="btn-1 px-6 py-4">Login</button>
-            <Link to="/vaults/0" className="btn-2 px-6 py-4">
-              See Ideavaults
-            </Link>
-          </div>
+          {/* <div className="flex w-1/2 justify-between"> */}
+          {/* <button className="btn-1 px-6 py-4">Login</button> */}
+          {/* </div> */}
           <p className="text-lg text-front text-opacity-80">
             Supported by Hong Kong's largest brokers!
           </p>
+          <Link to="/vaults/0" className="btn-2 px-6 py-6">
+            See Ideavaults
+          </Link>
         </div>
       </section>
-      <div className="h-[10vh]" />
     </>
   );
 }

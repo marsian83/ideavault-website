@@ -12,7 +12,7 @@ export default function AboutPage() {
         <p className="py-1 text-front text-opacity-75 text-lg">
           We are just an email away
         </p>
-        <Link to="mailto:help@ideavaulthk.com" className="btn-1 px-6 py-4 mt-5">
+        <Link to="mailto:info@ideavaulthk.com" className="btn-1 px-6 py-4 mt-5">
           Mail us
         </Link>
       </section>

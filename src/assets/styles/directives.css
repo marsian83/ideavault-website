@@ -1,19 +1,25 @@
 @keyframes y-carousel-view {
   0% {
-    transform: translateY(0%);
+    transform: translateY(30%);
   }
-  50% {
+  10% {
+    transform: translateY(30%);
+  }
+  55% {
     transform: translateY(-90%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateY(30%);
   }
 }
 @keyframes x-carousel-view {
   0% {
     transform: translateX(0%);
   }
-  50% {
+  10% {
+    transform: translateX(0%);
+  }
+  55% {
     transform: translateX(-90%);
   }
   100% {

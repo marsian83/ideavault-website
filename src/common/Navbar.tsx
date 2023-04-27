@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useCache from "../contexts/cacheContext";
 import { useEffect, useState } from "react";
 
@@ -7,23 +7,57 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="p-page py-4 flex fixed w-full justify-between items-center shadow-lg border-b bg-background z-[999]">
+      <nav className="p-page flex fixed w-full justify-between items-center shadow-lg border-b bg-background z-[999]">
         <div className="flex gap-x-8">
-          <Link to="/" className="text-primary font-semibold text-xl">
-            ideavault
+          <Link to="/" className="text-primary font-semibold text-xl py-4">
+            Ideavault
           </Link>
           <div className="flex gap-x-8 items-center text-sm font-medium text-front text-opacity-70">
-            <Link to="/vaults/0" className="">
+            <NavLink
+              to="/vaults/0"
+              className={({ isActive, isPending }) =>
+                `h-full flex flex-col justify-center duration-300 ${
+                  isPending
+                    ? "cursor-not-allowed opacity-50"
+                    : isActive
+                    ? "border-b-2 border-t-2 border-t-transparent border-b-primary pointer-events-none"
+                    : "hover:saturate-200"
+                }`
+              }
+            >
               Explore
-            </Link>
-            {/* <Link to="/vaults/0" className="">
-              Watchlist
-            </Link> */}
+            </NavLink>
           </div>
         </div>
-        <div className="flex gap-x-8 items-center text-sm font-medium text-front text-opacity-70">
-          <Link to="/for-businesses">For Businesses</Link>
-          <Link to="/about">About</Link>
+        <div className="flex gap-x-8 items-center h-[3.8rem] text-sm font-medium text-front text-opacity-70">
+          <NavLink
+            to="/for-businesses"
+            className={({ isActive, isPending }) =>
+              `h-full flex flex-col justify-center duration-300 ${
+                isPending
+                  ? "cursor-not-allowed opacity-50"
+                  : isActive
+                  ? "border-b-2 border-t-2 border-t-transparent border-b-primary pointer-events-none"
+                  : "hover:saturate-200"
+              }`
+            }
+          >
+            For Businesses
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+              `h-full flex flex-col justify-center duration-300 ${
+                isPending
+                  ? "cursor-not-allowed opacity-50"
+                  : isActive
+                  ? "border-b-2 border-t-2 border-t-transparent border-b-primary pointer-events-none"
+                  : "hover:saturate-200"
+              }`
+            }
+          >
+            About
+          </NavLink>
           <button
             onClick={() => {
               setShowLoginModal(true);
@@ -34,6 +68,7 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
+
       {showLoginModal && (
         <div className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-front bg-opacity-30 z-[1010]">
           <div className="bg-background w-max px-12 rounded-lg z-[1011]">
