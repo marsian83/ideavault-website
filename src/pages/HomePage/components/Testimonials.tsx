@@ -25,7 +25,7 @@ export default function Testimonials() {
           className="flex gap-2 py-12"
           style={{
             animation: `x-carousel-view infinite ${
-              2.5 * cache.data.testimonials.length * 1000
+              2.5 * cache.data.testimonials.length * 1000 * 1.8
             }ms linear`,
           }}
         >
