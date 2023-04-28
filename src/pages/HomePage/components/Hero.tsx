@@ -13,9 +13,14 @@ export default function Hero() {
         alt="loader"
         className="w-0 h-0 opacity-0"
       />
-      <section className="p-page relative flex h-screen overflow-hidden">
+      <section
+        className="p-page relative flex overflow-hidden"
+        style={{
+          height: "max(100vh, 840px)",
+        }}
+      >
         <div
-          className="absolute top-0 left-0 w-screen h-screen bg-bottom bg-no-repeat bg-cover -z-[1]"
+          className="absolute top-0 left-0 w-screen h-full bg-bottom bg-no-repeat bg-cover -z-[1]"
           style={{
             animation: "hero-anim 16000ms",
             animationIterationCount: "infinite",
