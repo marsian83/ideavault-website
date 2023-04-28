@@ -40,7 +40,7 @@ export default function ForEveryone() {
 
   return (
     <>
-      <section className="py-28 p-page relative bg-gradient-to-b from-[#f3f5fd] to-transparent">
+      <section className="py-28 mobile:py-14 p-page relative bg-gradient-to-b from-[#f3f5fd] to-transparent">
         {/* <img
           src="https://www.smallcase.com/static/images/svg/InvIdeasPatternLeft.svg"
           className="absolute top-0 left-0"
@@ -96,7 +96,7 @@ export default function ForEveryone() {
             setPopup(null);
           }}
         >
-          <div className="bg-background shadow-md rounded-lg pb-8 pt-4 px-8 w-[50vw]">
+          <div className="bg-background shadow-md rounded-lg pb-8 pt-4 px-8 w-[50vw] mobile:w-[98vw] mobile:max-h-[90vh] mobile:overflow-y-hidden">
             <div className="flex justify-center gap-x-5 py-6 items-center">
               <img
                 src={popup.imageUrl}

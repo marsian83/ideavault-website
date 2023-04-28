@@ -28,7 +28,7 @@ export default function Hero() {
         />
         <div className="flex-1 flex flex-col justify-center" />
         <div className="basis-[55%] flex flex-col items-center pt-36 gap-y-4 mobile:basis-[100%]">
-          <h1 className="text-4xl font-bold text-center tracking-tight py-2 mobile:py-4 mobile:text-[2.5rem] mobile:-tracking-normal">
+          <h1 className="text-4xl font-bold text-center tracking-tight py-2 mobile:py-4 mobile:text-4xl mobile:-tracking-normal">
             Unlock your investment
             <br />
             opportunities with ideavault
@@ -42,7 +42,10 @@ export default function Hero() {
           <p className="text-lg text-front text-opacity-80 mobile:text-center">
             Supported by Hong Kong's largest brokers!
           </p>
-          <Link to="/vaults/0" className="btn-2 px-6 py-6 mobile:py-4 mobile:px-4">
+          <Link
+            to="/vaults/0"
+            className="btn-2 px-6 py-6 mobile:py-4 mobile:px-4"
+          >
             See Ideavaults
           </Link>
         </div>

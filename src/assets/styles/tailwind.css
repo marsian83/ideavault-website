@@ -10,10 +10,10 @@
 
 @layer utilities {
   .p-page {
-    @apply px-[12vw];
+    @apply px-[12vw] mobile:px-[6vw];
   }
   .m-page {
-    @apply mx-[12vw];
+    @apply mx-[12vw] mobile:mx-[6vw];
   }
 
   .btn-1 {

@@ -33,7 +33,10 @@ export default function HomePage() {
                 "ideavaults can be changed to fit your needs. You can change the things in your ideavault any time, make your own ideavault",
             },
           ].map((item, i) => (
-            <div className="flex flex-col w-[28%] h-full gap-y-4 mobile:w-[100%]" key={i} >
+            <div
+              className="flex flex-col w-[28%] h-full gap-y-4 mobile:w-[100%]"
+              key={i}
+            >
               <div className="flex flex-col justify-between items-center">
                 <img
                   src={item.imageUrl}
@@ -61,7 +64,7 @@ export default function HomePage() {
           strategy or objective
         </p>
         <img
-          className="w-[35vw] contrast-200 rounded-xl shadow-xl"
+          className="w-[35vw] contrast-200 rounded-xl shadow-xl mobile:w-[70vw]"
           src="/images/homepage-video-banner.jpg"
           alt="vid-replace"
         />

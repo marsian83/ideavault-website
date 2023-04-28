@@ -6,6 +6,8 @@ export default function Testimonials() {
   const t1: typeof cache.data.testimonials = [];
   const t2: typeof t1 = [];
 
+  const isMobile = window.matchMedia("(max-width: 700px)");
+
   return (
     <section className="py-12">
       <div className="text-center flex flex-col gap-y-3">
@@ -16,7 +18,7 @@ export default function Testimonials() {
           see what other users and experts are saying
         </p>
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden mobile:overflow-x-scroll">
         {cache.data.testimonials.map((t, i) => {
           i % 2 == 0 ? t1.push(t) : t2.push(t);
           return <div key={i} className="hidden"></div>;
@@ -24,9 +26,11 @@ export default function Testimonials() {
         <div
           className="flex gap-2 py-12 px-8"
           style={{
-            animation: `x-carousel-view infinite ${
-              2.5 * cache.data.testimonials.length * 1000 * 1.8
-            }ms linear`,
+            animation: !isMobile
+              ? `x-carousel-view infinite ${
+                  2.5 * cache.data.testimonials.length * 1000 * 1.8
+                }ms linear`
+              : "",
           }}
         >
           {t1.map((t, i) => {
@@ -36,11 +40,11 @@ export default function Testimonials() {
             const a = t1[i];
             const b = t2[i];
             return (
-              <div key={i} className="flex flex-col gap-y-3">
+              <div key={i} className="flex flex-col gap-y-3 mobile:gap-y-6">
                 {[a, b].map((item, i) => (
                   <div
                     key={i}
-                    className="border shadow-lg p-3 w-[20vw] rounded"
+                    className="border shadow-lg p-3 w-[20vw] mobile:w-[75vw] rounded"
                   >
                     <div className="flex items-center gap-x-2">
                       <img

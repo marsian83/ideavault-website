@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
     <>
@@ -16,7 +17,7 @@ export default function Navbar() {
             <NavLink
               to="/vaults/0"
               className={({ isActive, isPending }) =>
-                `h-full flex flex-col justify-center duration-300 ${
+                `h-full flex flex-col justify-center duration-300 mobile:hidden ${
                   isPending
                     ? "cursor-not-allowed opacity-50"
                     : isActive
@@ -33,7 +34,7 @@ export default function Navbar() {
           <NavLink
             to="/for-businesses"
             className={({ isActive, isPending }) =>
-              `h-full flex flex-col justify-center duration-300 ${
+              `h-full flex flex-col justify-center duration-300 mobile:hidden ${
                 isPending
                   ? "cursor-not-allowed opacity-50"
                   : isActive
@@ -47,7 +48,7 @@ export default function Navbar() {
           <NavLink
             to="/about"
             className={({ isActive, isPending }) =>
-              `h-full flex flex-col justify-center duration-300 ${
+              `h-full flex flex-col justify-center duration-300 mobile:hidden ${
                 isPending
                   ? "cursor-not-allowed opacity-50"
                   : isActive
@@ -66,6 +67,29 @@ export default function Navbar() {
           >
             Login
           </button>
+          <div className="relative">
+            <button
+              onClick={() => {
+                setShowMobileNav(!showMobileNav);
+              }}
+              className="text-xl text-primary"
+            >
+              &#9776;
+            </button>
+            {showMobileNav && (
+              <div className="bg-background absolute z-[1012] p-5 top-full right-0 my-2 rounded border border-front border-opacity-30 flex flex-col gap-y-3">
+                {[
+                  { to: "/vaults/0", name: "Explore" },
+                  { to: "/for-businesses", name: "For Businesses" },
+                  { to: "/about", name: "About" },
+                ].map((navItem, i) => (
+                  <Link key={i} to={navItem.to} className="whitespace-nowrap">
+                    {navItem.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </nav>
 

@@ -4,17 +4,23 @@ import useCache from "../../../contexts/cacheContext";
 export default function Faqs() {
   const cache = useCache();
 
+  const isMobile = window.matchMedia("(max-width: 700px)");
+
   return (
     <section className="p-page flex flex-col gap-y-5">
-      <h1 className="text-center text-3xl font-bold">
+      <h1 className="text-center text-3xl font-bold mobile:text-2xl">
         Frequently Asked Questions
       </h1>
       <div className="flex justify-between mobile:flex-col">
         {cache.data.faqs.map((section, i) => (
           <div
             key={i}
-            className="flex flex-col gap-y-2"
-            style={{ width: `${Math.floor(100 / cache.data.faqs.length)}%` }}
+            className="flex flex-col gap-y-2 mobile:w-full mobile:gap-y-6"
+            style={{
+              width: !isMobile
+                ? `${Math.floor(100 / cache.data.faqs.length)}%`
+                : "",
+            }}
           >
             <h4 className="text-lg font-medium my-4">{section.title}</h4>
             {section.items.map((item, j) => (
