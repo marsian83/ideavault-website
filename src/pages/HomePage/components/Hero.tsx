@@ -3,15 +3,14 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <>
-      {/* <video
-        className="videoTag absolute top-0 left-0 h-screen w-screen object-cover object-top -z-[2]"
-        autoPlay
-        loop
-        muted
-      >
-        <source src="/images/hero-anim/anim.mp4" type="video/mp4" />
-      </video> */}
-      <section className="p-page flex h-screen bg-cover bg-no-repeat bg-[url('/images/hero/7.png')]">
+      <section className="p-page relative flex h-screen overflow-hidden">
+        <div
+          className="absolute top-0 left-0 w-screen h-screen bg-bottom bg-no-repeat bg-contain -z-[1]"
+          style={{
+            animation: "hero-anim 16000ms",
+            animationIterationCount: "infinite",
+          }}
+        />
         <div className="flex-1 flex flex-col justify-center" />
         <div className="basis-[55%] flex flex-col items-center pt-36 gap-y-4">
           <h1 className="text-4xl font-bold text-center tracking-tight py-2">
