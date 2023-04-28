@@ -50,7 +50,9 @@ export default function Testimonials() {
                       />
                       <h5 className="text-xl ">{item.name}</h5>
                     </div>
-                    <p className="mt-3">{item.content}</p>
+                    <p className="mt-3 text-front text-opacity-80">
+                      {item.content}
+                    </p>
                   </div>
                 ))}
               </div>
