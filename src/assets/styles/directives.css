@@ -29,18 +29,18 @@
 
 @keyframes hero-anim {
   0% {
-    background-image: url("/images/hero-anim/1.png");
+    background-image: url("/images/hero-anim/1.webp");
     transform: translateY(0%);
   }
   20% {
     transform: translateY(0%);
   }
   25% {
-    background-image: url("/images/hero-anim/1.png");
+    background-image: url("/images/hero-anim/1.webp");
     transform: translateY(100%);
   }
   25.5% {
-    background-image: url("/images/hero-anim/2.png");
+    background-image: url("/images/hero-anim/2.webp");
     transform: translateY(100%);
   }
   30% {
@@ -50,17 +50,17 @@
     transform: translateY(0%);
   }
   75% {
-    background-image: url("/images/hero-anim/2.png");
+    background-image: url("/images/hero-anim/2.webp");
     transform: translateY(100%);
   }
   75.5% {
-    background-image: url("/images/hero-anim/1.png");
+    background-image: url("/images/hero-anim/1.webp");
     transform: translateY(100%);
   }
   80% {
     transform: translateY(0%);
   }
   100% {
-    background-image: url("/images/hero-anim/1.png");
+    background-image: url("/images/hero-anim/1.webp");
   }
 }
