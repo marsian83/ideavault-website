@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import Hero from "./components/Hero";
 import Team from "./components/Team";
+import Founders from "./components/Founders";
 
 export default function AboutPage() {
   return (
     <>
       <Hero />
-      <Team />
+      {/* <Team /> */}
+      <Founders />
       <section className="p-page flex flex-col items-center pt-20">
         <h1 className="text-3xl font-semibold">Want to get it touch?</h1>
         <p className="py-1 text-front text-opacity-75 text-lg">

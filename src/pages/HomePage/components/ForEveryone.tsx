@@ -6,30 +6,32 @@ const lorem300 =
 const items = [
   {
     imageUrl: "/images/low-beta.png",
-    title: "Low Beta portfolio",
-    description:
-      "Invest in Bonds and low beta asset classes to ensure stable returns",
-    content: lorem300,
+    title: "Low-Volatility Investments",
+    description: "Invest in Stable and Steady Growth",
+    content:
+      "At Ideavault, we understand that some investors prefer low-risk investments that offer stable growth over time. That's why we offer a range of low-volatility investment options designed to provide reliable returns with minimal risk. \nOur team of financial experts has carefully selected a diverse range of low-volatility investments, including bonds, dividend stocks, and mutual funds. We also offer customized investment solutions tailored to your unique risk profile and investment goals. \nWhether you're a seasoned investor looking to diversify your portfolio or a first-time investor seeking a safe investment option, our low-volatility investment products offer an attractive solution. ",
   },
   {
     imageUrl: "/images/thematic.png",
-    title: "Thematic",
-    description:
-      " It focuses on investing in companies that are expected to benefit from a particular trend or theme",
-    content: lorem300,
+    title: "Thematic Investment",
+    description: "Invest in the Trends of Tomorrow",
+    content:
+      "At Ideavault, we believe in investing in the future. Our thematic investment options are designed to help you capitalize on the latest trends and technologies that are shaping our world.\nOur team of investment experts has identified a range of exciting themes, including renewable energy, electric vehicles, e-commerce, and more. By investing in these themes, you can benefit from the growth potential of these industries while also supporting positive social and environmental change. \nWe offer a range of thematic investment products, including exchange-traded funds (ETFs) and mutual funds. Our team can also create customized investment solutions tailored to your unique investment goals and risk profile.",
   },
   {
     imageUrl: "/images/low.png",
-    title: "Micro Investing",
-    description: "Start with as low as 500 HKD",
-    content: lorem300,
+    title: "Low Investment Amounts",
+    description: "Start investing will small amounts",
+    content:
+      "At Ideavault, we believe that everyone should have the opportunity to invest, regardless of their financial situation. That's why we offer a range of low investment options designed to help you start investing with small amounts. \nOur investment experts have carefully selected a range of low-cost investment options, including mutual funds and exchange-traded funds (ETFs). These products allow you to invest in a diversified portfolio of stocks and bonds with a low investment amount. \nInvesting small amounts can be an excellent way to start building your wealth and achieving your long-term financial goals. Contact us today to learn more about our low investment options. ",
   },
   {
     imageUrl: "/images/tracker.png",
     title: "Trackers",
     description:
       "Track your portfolio efficiently, and compare with market trends",
-    content: lorem300,
+    content:
+      "Trackers are a vital tool in the world of investment, helping investors monitor the performance of their portfolios and make informed decisions about future investments. At Ideavault, we understand the importance of providing our users with the best possible investment tools, and that's why we've developed a suite of trackers designed to help you keep tabs on your investments and make the most of your money.\nOur trackers cover a wide range of investments, including stocks, ETFs, mutual funds, and more. With real-time data and customizable alerts, you can stay on top of the latest market trends and ensure that you're always making informed decisions about your investments.\nOur trackers are designed with the needs of modern investors in mind. Whether you're a seasoned pro or just starting out, our intuitive interface and user-friendly design make it easy to keep track of your investments and make informed decisions about your portfolio.\nAt Ideavault, we believe that investing should be accessible to everyone, which is why we offer a range of free and premium trackers to suit every budget and investment style. Our free trackers provide real-time data and basic analysis tools, while our premium trackers offer advanced features like in-depth research, custom alerts, and personalized investment recommendations.",
   },
 ];
 
@@ -38,8 +40,8 @@ export default function ForEveryone() {
 
   return (
     <>
-      <section className="pt-28 pb-14 p-page relative bg-gradient-to-b from-[#f3f5fd] to-transparent">
-        <img
+      <section className="py-28 p-page relative bg-gradient-to-b from-[#f3f5fd] to-transparent">
+        {/* <img
           src="https://www.smallcase.com/static/images/svg/InvIdeasPatternLeft.svg"
           className="absolute top-0 left-0"
         />
@@ -47,7 +49,7 @@ export default function ForEveryone() {
         <img
           src="https://www.smallcase.com/static/images/svg/InvIdeasPatternRight.svg"
           className="absolute top-0 right-0"
-        />
+        /> */}
 
         <div className="text-center">
           <h2 className="font-semibold text-2xl">
@@ -94,7 +96,7 @@ export default function ForEveryone() {
             setPopup(null);
           }}
         >
-          <div className="bg-background shadow-md rounded-lg py-4 px-8 w-[70vw]">
+          <div className="bg-background shadow-md rounded-lg pb-8 pt-4 px-8 w-[50vw]">
             <div className="flex justify-center gap-x-5 py-6 items-center">
               <img
                 src={popup.imageUrl}
