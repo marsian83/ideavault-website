@@ -9,7 +9,7 @@ export default function Faqs() {
       <h1 className="text-center text-3xl font-bold">
         Frequently Asked Questions
       </h1>
-      <div className="flex justify-between">
+      <div className="flex justify-between mobile:flex-col">
         {cache.data.faqs.map((section, i) => (
           <div
             key={i}

@@ -12,7 +12,7 @@ export default function HomePage() {
       <Hero />
 
       <section className="flex p-page">
-        <div className="flex flex-row justify-between my-20">
+        <div className="flex flex-row justify-between my-20 mobile:flex-col mobile:gap-y-12">
           {[
             {
               imageUrl: "/images/beginner-friendly.png",
@@ -33,7 +33,7 @@ export default function HomePage() {
                 "ideavaults can be changed to fit your needs. You can change the things in your ideavault any time, make your own ideavault",
             },
           ].map((item, i) => (
-            <div className="flex flex-col w-[28%] h-full gap-y-4" key={i}>
+            <div className="flex flex-col w-[28%] h-full gap-y-4 mobile:w-[100%]" key={i} >
               <div className="flex flex-col justify-between items-center">
                 <img
                   src={item.imageUrl}
@@ -53,7 +53,7 @@ export default function HomePage() {
       </section>
 
       <section className="flex flex-col gap-y-5 mt-10 mb-20 p-page">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-4xl font-bold mobile:text-3xl">
           An ideavault is a basket of stocks that reflects an idea
         </h1>
         <p className="text-lg text-front text-opacity-75">

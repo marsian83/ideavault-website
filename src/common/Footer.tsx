@@ -31,7 +31,7 @@ export default function Footer() {
               </form>
             </div>
           </div>
-          <div className="flex justify-evenly flex-1 text-sm text-front text-opacity-60">
+          <div className="flex justify-evenly flex-1 text-sm text-front text-opacity-60 mobile:gap-x-4">
             <div className="flex flex-col gap-y-2">
               <h5 className="font-medium text-front text-opacity-80">
                 Company

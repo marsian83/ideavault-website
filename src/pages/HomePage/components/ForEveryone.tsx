@@ -60,16 +60,16 @@ export default function ForEveryone() {
             volatililty? Choose from a diverse menu
           </p>
         </div>
-        <div className="flex flex-col pt-16 pb-8 gap-y-24">
+        <div className="flex flex-col pt-16 pb-8 gap-y-24 mobile:gap-y-6">
           {[items.slice(0, 2), items.slice(2, 4)].map((row, index) => (
             <div
               key={index}
-              className="flex flex-wrap justify-center gap-x-24 relative z-[1]"
+              className="flex flex-wrap justify-center gap-x-24 relative z-[1] mobile:gap-y-6"
             >
               {row.map((item, i) => (
                 <div
                   key={i}
-                  className="p-8 w-[35%] cursor-pointer group duration-300 hover:-translate-y-2 flex flex-col gap-y-2 bg-background rounded-lg border"
+                  className="p-8 w-[35%] cursor-pointer group duration-300 hover:-translate-y-2 flex flex-col gap-y-2 bg-background rounded-lg border mobile:w-[100%]"
                   onClick={() => {
                     setPopup(item);
                   }}
