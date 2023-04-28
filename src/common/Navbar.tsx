@@ -67,7 +67,7 @@ export default function Navbar() {
           >
             Login
           </button>
-          <div className="relative">
+          <div className="relative widescreen:hidden">
             <button
               onClick={() => {
                 setShowMobileNav(!showMobileNav);
