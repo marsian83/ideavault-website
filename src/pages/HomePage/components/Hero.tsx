@@ -11,10 +11,10 @@ export default function Hero() {
       >
         <source src="/images/hero-anim/anim.mp4" type="video/mp4" />
       </video> */}
-      <section className="p-page flex h-screen">
-        <div className="basis-1/2 flex flex-col justify-center" />
-        <div className="basis-1/2 flex flex-col gap-y-5 justify-center items-center">
-          <h1 className="text-4xl font-bold text-center tracking-tight">
+      <section className="p-page flex h-screen bg-cover bg-no-repeat bg-[url('/images/hero/7.png')]">
+        <div className="flex-1 flex flex-col justify-center" />
+        <div className="basis-[55%] flex flex-col items-center pt-36 gap-y-4">
+          <h1 className="text-4xl font-bold text-center tracking-tight py-2">
             Unlock your investment
             <br />
             opportunities with ideavault

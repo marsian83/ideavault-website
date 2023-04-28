@@ -33,20 +33,19 @@ export default function HomePage() {
                 "ideavaults can be changed to fit your needs. You can change the things in your ideavault any time, make your own ideavault",
             },
           ].map((item, i) => (
-            <div
-              className="flex flex-col w-[28%] justify-between h-full"
-              key={i}
-            >
-              <div className="flex-1 flex flex-col justify-between items-center">
+            <div className="flex flex-col w-[28%] h-full gap-y-4" key={i}>
+              <div className="flex flex-col justify-between items-center">
                 <img
                   src={item.imageUrl}
                   className="w-[30%] aspect-square"
                   alt="simple to understand"
                 />
               </div>
-              <div className="flex flex-col flex-1 py-2 justify-center items-center text-center">
+              <div className="flex flex-col flex-1 gap-y-4 py-2 items-center text-center">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
-                <p>{item.content}</p>
+                <p className="text-front text-opacity-60 flex-1 flex flex-col justify-center">
+                  {item.content}
+                </p>
               </div>
             </div>
           ))}
