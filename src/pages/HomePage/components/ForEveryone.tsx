@@ -58,28 +58,34 @@ export default function ForEveryone() {
             volatililty? Choose from a diverse menu
           </p>
         </div>
-        {[items.slice(0, 2), items.slice(2, 4)].map((row, index) => (
-          <div
-            key={index}
-            className="flex flex-wrap justify-center gap-x-3 relative z-[1] py-3"
-          >
-            {row.map((item, i) => (
-              <div
-                key={i}
-                className="p-8 w-[30%] cursor-pointer group duration-300 hover:-translate-y-2 flex flex-col gap-y-2 bg-background rounded-lg border"
-                onClick={() => {
-                  setPopup(item);
-                }}
-              >
-                <img src={item.imageUrl} alt={item.title} className="w-[20%]" />
-                <h4 className="font-medium text-2xl group-hover:text-primary group-hover:brightness-50">
-                  {item.title}
-                </h4>
-                <p>{item.description}</p>
-              </div>
-            ))}
-          </div>
-        ))}
+        <div className="flex flex-col pt-16 pb-8 gap-y-24">
+          {[items.slice(0, 2), items.slice(2, 4)].map((row, index) => (
+            <div
+              key={index}
+              className="flex flex-wrap justify-center gap-x-24 relative z-[1]"
+            >
+              {row.map((item, i) => (
+                <div
+                  key={i}
+                  className="p-8 w-[35%] cursor-pointer group duration-300 hover:-translate-y-2 flex flex-col gap-y-2 bg-background rounded-lg border"
+                  onClick={() => {
+                    setPopup(item);
+                  }}
+                >
+                  <img
+                    src={item.imageUrl}
+                    alt={item.title}
+                    className="w-[20%]"
+                  />
+                  <h4 className="font-medium text-2xl group-hover:text-primary group-hover:brightness-75">
+                    {item.title}
+                  </h4>
+                  <p>{item.description}</p>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
       </section>
       {popup && (
         <div

@@ -38,7 +38,7 @@ function FaqItem(props: FaqitemProps) {
   return (
     <>
       <h6
-        className="hover:text-primary cursor-pointer flex items-center text-front text-opacity-80"
+        className="hover:text-primary cursor-pointer flex items-center text-front text-opacity-80 select-none"
         onClick={() => {
           setShow(!show);
         }}

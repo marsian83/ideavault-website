@@ -7,7 +7,7 @@ export default function Testimonials() {
   const t2: typeof t1 = [];
 
   return (
-    <section className="p-page py-12">
+    <section className="py-12">
       <div className="text-center flex flex-col gap-y-3">
         <p className="text-lg text-front text-opacity-75">
           Don't take our word for it
@@ -22,7 +22,7 @@ export default function Testimonials() {
           return <div key={i} className="hidden"></div>;
         })}
         <div
-          className="flex gap-2 py-12"
+          className="flex gap-2 py-12 px-8"
           style={{
             animation: `x-carousel-view infinite ${
               2.5 * cache.data.testimonials.length * 1000 * 1.8

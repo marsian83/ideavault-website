@@ -1,25 +1,31 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Hero() {
-  const [bannerIndex, setBannerIndex] = useState(0);
-  const banners = ["/images/hero/4.jpg", "/images/hero/5.webp"];
+declare module "*.mp4" {
+  const src: string;
+}
 
-  setInterval(() => {
-    setBannerIndex((bannerIndex + 1) % banners.length);
-  }, 2345);
+export default function Hero() {
+  // const [bannerIndex, setBannerIndex] = useState(0);
+  // const banners = ["/images/hero/4.jpg", "/images/hero/5.webp"];
+
+  // setInterval(() => {
+  //   setBannerIndex((bannerIndex + 1) % banners.length);
+  // }, 2345);
 
   return (
     <>
-      <section className="p-page flex h-[75vh] bg-contain bg-bottom bg-no-repeat">
-        <div className="basis-1/2 flex flex-col justify-center">
-          <img
-            src={banners.at(bannerIndex)}
-            alt="hero-banner"
-            className="aspect-video w-full"
-          />
-        </div>
-        <div className="basis-1/2 flex flex-col gap-y-5 justify-center items-center">
+      <video
+        className="videoTag absolute top-0 left-0 h-screen w-screen object-cover object-top -z-[2]"
+        autoPlay
+        loop
+        muted
+      >
+        <source src="/images/hero-anim/anim.mp4" type="video/mp4" />
+      </video>
+      <section className="p-page flex h-screen">
+        <div className="basis-1/2 flex flex-col justify-center" />
+        <div className="basis-1/2 flex flex-col gap-y-5 mt-36 items-center">
           <h1 className="text-4xl font-bold text-center tracking-tight">
             Unlock your investment
             <br />

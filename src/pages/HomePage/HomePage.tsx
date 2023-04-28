@@ -12,13 +12,13 @@ export default function HomePage() {
       <Hero />
 
       <section className="flex p-page">
-        <div className="flex flex-row justify-between py-14">
+        <div className="flex flex-row justify-between my-20">
           {[
             {
               imageUrl: "/images/beginner-friendly.png",
               title: "Beginner Friendly",
               content:
-                " ideavaults are new ways to invest based on simple ideas that are easy to understand for everyone.",
+                " ideavaults are new ways to invest based on simple ideas that are easy to be understood for almost everyone.",
             },
             {
               imageUrl: "/images/experts.png",
@@ -68,13 +68,6 @@ export default function HomePage() {
         />
       </section>
 
-      {/* <section className="my-14">
-        <img
-          src="/images/ideavault-simplicity-banner.jpg"
-          alt="ideavault is for everyone"
-          className="w-full"
-        />
-      </section> */}
       <ForEveryone />
 
       <Faqs />
