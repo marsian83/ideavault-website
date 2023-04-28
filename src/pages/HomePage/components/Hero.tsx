@@ -3,6 +3,16 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <>
+      <img
+        src="/images/hero-anim/1.webp"
+        alt="loader"
+        className="w-0 h-0 opacity-0"
+      />
+      <img
+        src="/images/hero-anim/2.webp"
+        alt="loader"
+        className="w-0 h-0 opacity-0"
+      />
       <section className="p-page relative flex h-screen overflow-hidden">
         <div
           className="absolute top-0 left-0 w-screen h-screen bg-bottom bg-no-repeat bg-cover -z-[1]"
