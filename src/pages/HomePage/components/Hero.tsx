@@ -5,7 +5,7 @@ export default function Hero() {
     <>
       <section className="p-page relative flex h-screen overflow-hidden">
         <div
-          className="absolute top-0 left-0 w-screen h-screen bg-bottom bg-no-repeat bg-contain -z-[1]"
+          className="absolute top-0 left-0 w-screen h-screen bg-bottom bg-no-repeat bg-cover -z-[1]"
           style={{
             animation: "hero-anim 16000ms",
             animationIterationCount: "infinite",
