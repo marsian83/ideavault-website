@@ -4,6 +4,7 @@ import {
   Outlet,
   Route,
   RouterProvider,
+  useParams,
 } from "react-router-dom";
 import Footer from "./common/Footer";
 import Navbar from "./common/Navbar";
@@ -12,6 +13,7 @@ import useCache from "./contexts/cacheContext";
 import ForBusinessesPage from "./pages/ForBusinessesPage/ForBusinessesPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import DiscoverPage from "./pages/DiscoverPage/DiscoverPage";
+import { useEffect } from "react";
 
 export default function App() {
   const router = createBrowserRouter(
@@ -30,6 +32,10 @@ export default function App() {
 
 function Root() {
   const cache = useCache();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [useParams()]);
 
   return (
     <main className="relative">
