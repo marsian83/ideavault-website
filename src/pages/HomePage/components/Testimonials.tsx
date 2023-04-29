@@ -15,7 +15,7 @@ export default function Testimonials() {
           Don't take our word for it
         </p>
         <p className="text-3xl font-bold">
-          see what other users and experts are saying
+          See what other users and experts are saying
         </p>
       </div>
       <div className="overflow-hidden mobile:overflow-x-scroll">
