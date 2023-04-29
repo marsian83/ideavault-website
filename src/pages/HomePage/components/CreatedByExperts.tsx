@@ -11,7 +11,7 @@ export default function CreatedByExperts() {
           Curated by Hong Kong's <br /> top investment managers
         </h1>
         <p className="text-front text-opacity-80 pr-16">
-          smallcases are created & managed by leading professionals who are
+          Ideavaults are created & managed by leading professionals who are
           <br />
           <span className="font-bold pr-2">SFC registered</span>
           research analysts and investment advisors
