@@ -59,7 +59,7 @@ export default function Navbar() {
           >
             About
           </NavLink>
-          <a href = "https://forms.gle/Vba9DtqgFdXHyzqA8" target="_blank">
+          <a href = "https://c3n4byxm1tg.typeform.com/to/scr8y4XT" target="_blank">
             <button
               onClick={() => {
                 setShowLoginModal(true);
