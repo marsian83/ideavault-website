@@ -27,6 +27,7 @@ export default function Founders() {
               src={founder.imageUrl}
               alt={founder.name}
               className="md:w-[15vw] h-full m-5 rounded-full border border-front border-opacity-50"
+              style={{ borderRadius: "50%", height:"200px", width:"200px"}}
             />
             <div className="md:flex flex-col gap-y-5">
               <h3 className="text-xl font-medium">{founder.name}</h3>
