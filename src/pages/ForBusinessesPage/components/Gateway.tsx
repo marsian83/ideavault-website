@@ -1,6 +1,6 @@
 export default function Gateway() {
   return (
-    <section className="p-page flex py-28">
+    <section className="p-page md:flex py-28">
       <div className="w-1/2 flex flex-col justify-center gap-y-3">
         <p className="text-lg font-semibold text-primary">ideavault Gateway</p>
         <h1 className="font-bold text-4xl">
@@ -13,7 +13,7 @@ export default function Gateway() {
         </p>
         <button className="btn-1 w-max px-6 py-3">Coming Soon</button>
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 md:flex justify-center pt-3">
         <img
           src="/images/gateway.jpg"
           alt="ideavault gateway api example"

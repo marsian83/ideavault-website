@@ -15,11 +15,11 @@ export default function DiscoverPage() {
     <>
       <div className="h-[15vh]" />
 
-      <section className="bg-primary bg-opacity-5 py-8 px-6 items-start flex gap-x-5 m-page rounded-xl">
+      <section className="bg-primary bg-opacity-5 py-8 px-6 items-start md:flex gap-x-5 m-page rounded-xl">
         <img
           src={vault.imageUrl}
           alt=""
-          className="aspect-square rounded-lg object-cover w-24"
+          className="aspect-square rounded-lg object-cover w-24 "
         />
         <div className="flex-1 flex flex-col">
           <h1 className="font-semibold text-2xl">
@@ -28,8 +28,8 @@ export default function DiscoverPage() {
               Free Access
             </span>
           </h1>
-          <h3 className="text-sm my-[-4px]">{vault.subtitle}</h3>
-          <p className="w-1/3 pt-3">{vault.description}</p>
+          <h3 className="text-sm my-[-4px] ">{vault.subtitle}</h3>
+          <p className=" md:w-1/3 pt-3 ">{vault.description}</p>
         </div>
         <div className="pr-32">
           <h4 className="text-front text-opacity-70 text-sm">CAGR</h4>
@@ -42,7 +42,7 @@ export default function DiscoverPage() {
         </div>
       </section>
 
-      <section className="p-page py-20 flex">
+      <section className="p-page py-20 md:flex">
         <div className="flex-1">
           <h1 className="text-primary font-semibold text-xl border-b border-front border-opacity-30 pb-3">
             About the ideavault

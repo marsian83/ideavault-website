@@ -1,6 +1,6 @@
 export default function Publisher() {
   return (
-    <section className="p-page flex py-28">
+    <section className="p-page md:flex py-28">
       <div className="w-1/2 flex flex-col justify-center gap-y-3">
         <p className="text-lg font-semibold">ideavault Publisher</p>
         <h1 className="font-bold text-4xl">
@@ -15,7 +15,7 @@ export default function Publisher() {
       <img
         src="/images/publisher-banner.jpg"
         alt="ideavault publisher example"
-        className="w-1/2"
+        className="md:w-1/2 pt-3"
       />
     </section>
   );

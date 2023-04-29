@@ -1,17 +1,17 @@
 export default function Hero() {
   return (
-    <section className="h-screen bg-secondary flex p-page">
-      <div className="w-1/2 flex flex-col justify-center">
-        <h1 className="text-5xl font-bold text-front text-opacity-90">
-          Investing ecosystem <br /> for <br /> ambitious brands
+    <section className="h-screen bg-secondary md:flex p-page ">
+      <div className="w-1/2 md:flex flex-col justify-center">
+        <h1 className="text-5xl font-bold text-front text-opacity-90 ">
+          <br/>Investing ecosystem <br /> for <br /> ambitious brands
         </h1>
-        <p className="text-lg w-2/3 pt-4">
+        <p className="text-lg md:w-2/3 pt-4">
           Connect into Hong Kong's fastest growing investment product layer and
           offer modern products, seamless transactions and delightful
           experiences
         </p>
       </div>
-      <div className="basis-1/2 flex flex-col justify-center">
+      <div className="basis-1/2 md:flex flex-col justify-center">
         <img
           className="w-full aspect-auto"
           src="/images/ecosystem.jpg"

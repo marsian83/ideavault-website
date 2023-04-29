@@ -4,7 +4,7 @@ export default function Hero() {
       className="p-page py-36 bg-cover bg-left"
       style={{ backgroundImage: "url('/images/about-hero-bg.svg')" }}
     >
-      <div className="w-1/2 flex flex-col gap-y-8 text-back p-5">
+      <div className="md:w-1/2 flex flex-col gap-y-8 text-back p-5">
         <h1 className="text-5xl font-bold">
           Changing How <br /> Hong Kong invests
         </h1>
