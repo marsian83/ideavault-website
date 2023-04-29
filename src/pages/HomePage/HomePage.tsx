@@ -60,7 +60,7 @@ export default function HomePage() {
           An ideavault is a basket of stocks that reflects an idea
         </h1>
         <p className="text-lg text-front text-opacity-75">
-          ideavaultssare portfolios of stocks or ETFs, that track a theme,
+          Ideavaults are portfolios of stocks or ETFs, that track a theme,
           strategy or objective
         </p>
         <img
