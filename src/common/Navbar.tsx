@@ -59,14 +59,16 @@ export default function Navbar() {
           >
             About
           </NavLink>
-          <button
-            onClick={() => {
-              setShowLoginModal(true);
-            }}
-            className="text-primary border border-primary border-opacity-40 rounded-md px-4 py-2 text-sm duration-300 hover:bg-primary hover:text-back"
-          >
-            Login
-          </button>
+          <a href = "https://forms.gle/Vba9DtqgFdXHyzqA8" target="_blank">
+            <button
+              onClick={() => {
+                setShowLoginModal(true);
+              }}
+              className="text-primary border border-primary border-opacity-40 rounded-md px-4 py-2 text-sm duration-300 hover:bg-primary hover:text-back"
+            >
+              JOIN BETA WAITLIST
+            </button>
+            </a>
           <div className="relative widescreen:hidden">
             <button
               onClick={() => {
@@ -93,7 +95,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {showLoginModal && (
+      {/* {showLoginModal && (
         <div className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-front bg-opacity-30 z-[1010]">
           <div className="bg-background w-max px-12 rounded-lg z-[1011]">
             <div className="border-b border-primary border-opacity-40 flex justify-between">
@@ -138,7 +140,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }
