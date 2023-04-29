@@ -18,7 +18,7 @@ export default function HomePage() {
               imageUrl: "/images/beginner-friendly.png",
               title: "Beginner Friendly",
               content:
-                " ideavaults are new ways to invest based on simple ideas that are easy to be understood for almost everyone.",
+                " Ideavaults are new ways to invest based on simple ideas that are easy to be understood for almost everyone.",
             },
             {
               imageUrl: "/images/experts.png",
