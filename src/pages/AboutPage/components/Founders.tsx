@@ -17,20 +17,20 @@ export default function Founders() {
   return (
     <section className="py-16 p-page">
       <h1 className="text-3xl font-semibold text-center">Meet Our Founders</h1>
-      <div className="my-8 md:flex flex-col gap-y-10">
+      <div className="my-8 flex flex-col gap-y-10">
         {founders.map((founder, index) => (
           <div
             key={index}
-            className="md:flex gap-x-8 items-center justify-between"
+            className="flex mobile:flex-col gap-x-8 items-center justify-between"
           >
             <img
               src={founder.imageUrl}
               alt={founder.name}
-              className="w-[20%] m-5 rounded-full border aspect-square border-front border-opacity-50"
+              className="w-[20%] mobile:w-[80%] m-5 rounded-full border aspect-square border-front border-opacity-50"
             />
             <div className="md:flex flex-col gap-y-5">
               <h3 className="text-xl font-medium">{founder.name}</h3>
-              <p className="text-sm text-front text-opacity-90">
+              <p className="text-sm text-front text-opacity-90 mobile:mt-3">
                 {founder.description}
               </p>
             </div>

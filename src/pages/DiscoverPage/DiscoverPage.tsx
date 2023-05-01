@@ -15,7 +15,7 @@ export default function DiscoverPage() {
     <>
       <div className="h-[15vh]" />
 
-      <section className="bg-primary bg-opacity-5 py-8 px-6 items-start md:flex gap-x-5 m-page rounded-xl">
+      <section className="bg-primary bg-opacity-5 py-8 px-6 items-start flex mobile:flex-col gap-x-5 m-page rounded-xl">
         <img
           src={vault.imageUrl}
           alt=""
@@ -29,7 +29,7 @@ export default function DiscoverPage() {
             </span>
           </h1>
           <h3 className="text-sm my-[-4px] ">{vault.subtitle}</h3>
-          <p className=" md:w-1/3 pt-3 ">{vault.description}</p>
+          <p className="widescreen:w-1/3 pt-3 ">{vault.description}</p>
         </div>
         <div className="pr-32">
           <h4 className="text-front text-opacity-70 text-sm">CAGR</h4>
@@ -42,7 +42,7 @@ export default function DiscoverPage() {
         </div>
       </section>
 
-      <section className="p-page py-20 md:flex">
+      <section className="p-page widescreen:py-20 flex mobile:flex-col-reverse">
         <div className="flex-1">
           <h1 className="text-primary font-semibold text-xl border-b border-front border-opacity-30 pb-3">
             About the ideavault
@@ -54,8 +54,8 @@ export default function DiscoverPage() {
           </div>
         </div>
 
-        <div className="p-10">
-          <h3 className="text-front text-opacity-60 mr-10">
+        <div className="widescreen:p-10 mobile:my-12 mobile:px-2">
+          <h3 className="text-front text-opacity-60 widescreen:mr-10">
             Minimum Investment Amount
           </h3>
           <p className="brightness-50 text-xl">$ {vault.minimum}</p>

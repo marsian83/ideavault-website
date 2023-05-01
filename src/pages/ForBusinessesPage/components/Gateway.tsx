@@ -1,7 +1,7 @@
 export default function Gateway() {
   return (
-    <section className="p-page md:flex py-28">
-      <div className="w-1/2 flex flex-col justify-center gap-y-3">
+    <section className="p-page flex mobile:flex-col py-28">
+      <div className="widescreen:w-1/2 flex flex-col justify-center gap-y-3">
         <p className="text-lg font-semibold text-primary">ideavault Gateway</p>
         <h1 className="font-bold text-4xl">
           Putting the invest button on the internet
@@ -17,7 +17,7 @@ export default function Gateway() {
         <img
           src="/images/gateway.jpg"
           alt="ideavault gateway api example"
-          className="w-[60%]"
+          className="w-[60%] mobile:w-full"
         />
       </div>
     </section>
