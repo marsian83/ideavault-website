@@ -96,7 +96,7 @@ export default function ForEveryone() {
             setPopup(null);
           }}
         >
-          <div className="bg-background shadow-md rounded-lg pb-8 pt-4 px-8 w-[50vw] mobile:w-[98vw] mobile:max-h-[90vh] mobile:overflow-y-hidden">
+          <div className="bg-background shadow-md rounded-lg pb-8 pt-4 px-8 w-[50vw] mobile:w-[98vw] mobile:max-h-[80vh] mobile:overflow-y-scroll">
             <div className="flex justify-center gap-x-5 py-6 items-center">
               <img
                 src={popup.imageUrl}
