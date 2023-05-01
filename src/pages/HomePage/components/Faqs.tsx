@@ -15,11 +15,11 @@ export default function Faqs() {
         {cache.data.faqs.map((section, i) => (
           <div
             key={i}
-            className="flex flex-col gap-y-2 mobile:w-full mobile:gap-y-6"
+            className="flex flex-col gap-y-2 mobile:gap-y-6"
             style={{
               width: !isMobile
                 ? `${Math.floor(100 / cache.data.faqs.length)}%`
-                : "",
+                : "100%",
             }}
           >
             <h4 className="text-lg font-medium my-4">{section.title}</h4>
@@ -42,7 +42,7 @@ function FaqItem(props: FaqitemProps) {
   const [show, setShow] = useState(false);
 
   return (
-    <>
+    <div>
       <h6
         className="hover:text-primary cursor-pointer flex items-center text-front text-opacity-80 select-none"
         onClick={() => {
@@ -65,6 +65,6 @@ function FaqItem(props: FaqitemProps) {
       >
         {props.content}
       </p>
-    </>
+    </div>
   );
 }
