@@ -17,7 +17,7 @@ export default function Faqs() {
             key={i}
             className="flex flex-col gap-y-2 mobile:gap-y-6"
             style={{
-              width: !isMobile
+              width: !isMobile.matches
                 ? `${Math.floor(100 / cache.data.faqs.length)}%`
                 : "100%",
             }}

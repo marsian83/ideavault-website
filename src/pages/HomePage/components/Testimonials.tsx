@@ -21,12 +21,12 @@ export default function Testimonials() {
       <div className="overflow-hidden mobile:overflow-x-scroll">
         {cache.data.testimonials.map((t, i) => {
           i % 2 == 0 ? t1.push(t) : t2.push(t);
-          return <div key={i} className="hidden"></div>;
+          return <></>;
         })}
         <div
           className="flex gap-2 py-12 px-8"
           style={{
-            animation: !isMobile
+            animation: !isMobile.matches
               ? `x-carousel-view infinite ${
                   2.5 * cache.data.testimonials.length * 1000 * 1.8
                 }ms linear`
@@ -35,7 +35,7 @@ export default function Testimonials() {
         >
           {t1.map((t, i) => {
             if (i > Math.min(t1.length, t2.length) - 1) {
-              return <div key={i} className="hidden"></div>;
+              return <></>;
             }
             const a = t1[i];
             const b = t2[i];
