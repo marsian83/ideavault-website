@@ -59,7 +59,10 @@ export default function Navbar() {
           >
             About
           </NavLink>
-          <a href = "https://c3n4byxm1tg.typeform.com/to/scr8y4XT" target="_blank">
+          <a
+            href="https://c3n4byxm1tg.typeform.com/to/scr8y4XT"
+            target="_blank"
+          >
             <button
               onClick={() => {
                 setShowLoginModal(true);
@@ -68,7 +71,7 @@ export default function Navbar() {
             >
               JOIN BETA WAITLIST
             </button>
-            </a>
+          </a>
           <div className="relative widescreen:hidden">
             <button
               onClick={() => {
@@ -95,7 +98,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* {showLoginModal && (
+      {showLoginModal && (
         <div className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-front bg-opacity-30 z-[1010]">
           <div className="bg-background w-max px-12 rounded-lg z-[1011]">
             <div className="border-b border-primary border-opacity-40 flex justify-between">
@@ -140,7 +143,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      )} */}
+      )}
     </>
   );
 }
