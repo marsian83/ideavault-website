@@ -85,7 +85,14 @@ export default function Navbar() {
                   { to: "/for-businesses", name: "For Businesses" },
                   { to: "/about", name: "About" },
                 ].map((navItem, i) => (
-                  <Link key={i} to={navItem.to} className="whitespace-nowrap">
+                  <Link
+                    key={i}
+                    to={navItem.to}
+                    onClick={() => {
+                      setShowMobileNav(false);
+                    }}
+                    className="whitespace-nowrap"
+                  >
                     {navItem.name}
                   </Link>
                 ))}
