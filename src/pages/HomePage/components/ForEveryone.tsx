@@ -41,16 +41,6 @@ export default function ForEveryone() {
   return (
     <>
       <section className="py-28 mobile:py-14 p-page relative bg-gradient-to-b from-[#f3f5fd] to-transparent">
-        {/* <img
-          src="https://www.smallcase.com/static/images/svg/InvIdeasPatternLeft.svg"
-          className="absolute top-0 left-0"
-        />
-
-        <img
-          src="https://www.smallcase.com/static/images/svg/InvIdeasPatternRight.svg"
-          className="absolute top-0 right-0"
-        /> */}
-
         <div className="text-center">
           <h2 className="font-semibold text-2xl">
             There is an ideavault for everyone

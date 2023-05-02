@@ -26,8 +26,8 @@ export default function Hero() {
             animationIterationCount: "infinite",
           }}
         />
-        <div className="flex-1 flex flex-col justify-center" />
-        <div className="basis-[55%] flex flex-col items-center pt-36 gap-y-4 mobile:basis-[100%]">
+        <div className="flex-1 flex flex-col widescreen:justify-center" />
+        <div className="basis-[55%] flex flex-col items-center pt-36 mobile:pt-24 gap-y-4 mobile:basis-[100%]">
           <h1 className="text-4xl font-bold text-center tracking-tight py-2 mobile:py-4 mobile:text-4xl mobile:-tracking-normal">
             Unlock your investment
             <br />

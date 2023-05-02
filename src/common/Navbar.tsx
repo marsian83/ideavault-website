@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import useCache from "../contexts/cacheContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
   const [showMobileNav, setShowMobileNav] = useState(false);
