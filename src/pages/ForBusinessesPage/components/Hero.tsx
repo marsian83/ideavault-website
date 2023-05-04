@@ -12,7 +12,7 @@ export default function Hero() {
           experiences
         </p>
       </div>
-      <div className="basis-1/2 mflex flex-col justify-center">
+      <div className="basis-1/2 flex flex-col justify-center">
         <img
           className="w-full aspect-auto"
           src="/images/ecosystem.jpg"
